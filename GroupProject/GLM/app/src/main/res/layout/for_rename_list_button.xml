@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+        <View
+            android:layout_width="10dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:visibility="invisible"
+            />
+
+        <EditText
+            android:id="@+id/enterNewNameForTable"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_weight="9"
+            android:autofillHints=""
+            android:gravity="center"
+            android:hint="@string/enter_new_list_name"
+            android:inputType="date|textUri|textShortMessage|textLongMessage|textAutoCorrect|none|numberSigned|textVisiblePassword|textWebEditText|textMultiLine|textNoSuggestions|textFilter|number|datetime|textWebEmailAddress|textPersonName|text|textPhonetic|textCapSentences|textPassword|textAutoComplete|textImeMultiLine|textPostalAddress|numberDecimal|textEmailAddress|numberPassword|textCapWords|phone|textEmailSubject|textCapCharacters|time|textWebPassword" />
+
+        <View
+            android:layout_width="10dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:visibility="invisible"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <View
+            android:layout_width="10dp"
+            android:layout_height="50dp"
+            android:layout_weight="2"
+            android:visibility="invisible"
+            />
+
+        <Button
+            android:id="@+id/doNotRenameTable"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:layout_gravity="clip_vertical"
+            android:layout_weight="1"
+            android:background="#B2D235"
+            android:text="@string/back_rename" />
+        <View
+            android:layout_width="10dp"
+            android:layout_height="50dp"
+            android:layout_weight="2"
+            android:visibility="invisible"
+            />
+
+        <Button
+            android:id="@+id/renameTable"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:layout_gravity="clip_vertical"
+            android:layout_weight="1"
+            android:background="#B2D235"
+            android:text="@string/rename" />
+        <View
+            android:layout_width="10dp"
+            android:layout_height="50dp"
+            android:layout_weight="2"
+            android:visibility="invisible"
+            />
+    </LinearLayout>
+
+
+
+</LinearLayout>

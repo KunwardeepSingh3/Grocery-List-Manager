@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">GLM</string>
+    <string name="grocery_shopping_list">Grocery Shopping List</string>
+    <string name="groceryListString">+</string>
+    <string name="create_list">Create</string>
+    <string name="list_name">List Name :</string>
+    <string name="new_list_name">Enter New List Name</string>
+    <string name="list_name_active">List Name</string>
+    <string name="back">back</string>
+    <string name="items_added">Items Added</string>
+    <string name="type_item_name">Type Item Name</string>
+    <string name="back_rename">Back</string>
+    <string name="rename">Rename</string>
+    <string name="enter_new_list_name">Enter New List Name</string>
+    <string name="add_new_item">Enter New Item Name</string>
+    <string name="list_name_edit_screen">List Name</string>
+    <string name="done">Done</string>
+    <string name="choose_type">Choose Type: </string>
+    <string name="add">Add</string>
+    <string name="name_of_item">name of Item</string>
+    <string name="qty">qty</string>
+    <string name="check_box">check_box</string>
+    <string name="check">check</string>
+    <string name="clear">Clear</string>
+    <string name="edit_item">Edit_Item</string>
+    <string name="bug_report">Bug_Report</string>
+    <string name="enter_bug_report">Enter Bug Report</string>
+    <string name="send">Send</string>
+    <string name="enter_subject">Enter Subject</string>
+    <string-array name="ItemtypeArray">
+        <item>All Types</item>
+        <item>Fruit</item>
+        <item>Vegetable</item>
+        <item>Meat</item>
+        <item>Dairy</item>
+        <item>Frozen</item>
+        <item>Bakery</item>
+        <item>Beverage</item>
+    </string-array>
+    <string-array name="TypeArrayMinusAllTypes">
+        <item>Fruit</item>
+        <item>Vegetable</item>
+        <item>Meat</item>
+        <item>Dairy</item>
+        <item>Frozen</item>
+        <item>Bakery</item>
+        <item>Beverage</item>
+    </string-array>
+</resources>

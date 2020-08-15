@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        >
+
+        <TextView
+            android:id="@+id/choose_type"
+            android:layout_width="160dp"
+            android:layout_height="34.5dp"
+            android:layout_weight=".5"
+            android:fontFamily="serif-monospace"
+            android:gravity="bottom|center_horizontal"
+            android:text="@string/choose_type"
+            android:textColor="#00AAAD"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:typeface="monospace" />
+
+        <Spinner
+            android:id="@+id/createItemForDBSpinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:entries="@array/TypeArrayMinusAllTypes" />
+        <View
+            android:layout_width="10dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:visibility="invisible"
+            />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp">
+        <View
+            android:layout_width="10dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:visibility="invisible"
+            />
+
+        <EditText
+            android:id="@+id/enterNameOfNewItem"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="9"
+            android:autofillHints=""
+            android:gravity="center"
+            android:hint="@string/add_new_item"
+            android:inputType="textUri|textShortMessage|textLongMessage|textAutoCorrect" />
+
+        <View
+            android:layout_width="10dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:visibility="invisible"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <View
+            android:layout_width="10dp"
+            android:layout_height="50dp"
+            android:layout_weight="2"
+            android:visibility="invisible"
+            />
+
+        <Button
+            android:id="@+id/doNotAddToDB"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:layout_gravity="clip_vertical"
+            android:layout_weight="1"
+            android:background="#B2D235"
+            android:text="@string/back_rename" />
+        <View
+            android:layout_width="10dp"
+            android:layout_height="50dp"
+            android:layout_weight="2"
+            android:visibility="invisible"
+            />
+
+        <Button
+            android:id="@+id/addToDB"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:layout_gravity="clip_vertical"
+            android:layout_weight="1"
+            android:background="#B2D235"
+            android:text="@string/add"/>
+        <View
+            android:layout_width="10dp"
+            android:layout_height="50dp"
+            android:layout_weight="2"
+            android:visibility="invisible"
+            />
+    </LinearLayout>
+
+
+
+</LinearLayout>

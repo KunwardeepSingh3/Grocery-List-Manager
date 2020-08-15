@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/activity_list_page">
+
+    <Button
+        android:id="@+id/clearAll"
+        android:layout_width="55dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="15dp"
+        android:background="#00FFFFFF"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center_vertical"
+        android:onClick="clearAllCheck"
+        android:text="@string/clear"
+        android:textColor="#B2D235"
+        android:textSize="16sp"
+        android:typeface="monospace"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/listName" />
+
+    <ImageButton
+        android:id="@+id/add_item"
+        android:layout_width="35dip"
+        android:layout_height="35dip"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="24dp"
+        android:background="#00FFFFFF"
+        android:contentDescription="@string/edit_item"
+        android:onClick="goToAddItemsActivity"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_edit_black_24dp"
+        tools:ignore="PrivateResource" />
+
+    <TextView
+        android:id="@+id/listName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="serif-monospace"
+        android:text="@string/list_name_active"
+        android:textColor="#00AAAD"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:typeface="serif"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_conversion_absoluteHeight="60dp"
+        tools:layout_conversion_absoluteWidth="411dp" />
+
+    <ListView
+        android:id="@+id/listPageListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="95dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="55dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/add_item"
+        app:layout_constraintVertical_bias="1.0"
+        tools:layout_conversion_absoluteHeight="571dp"
+        tools:layout_conversion_absoluteWidth="411dp">
+
+    </ListView>
+
+    <ImageButton
+        android:id="@+id/createListScreenBackBtn"
+        android:layout_width="35dip"
+        android:layout_height="35dip"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="20dp"
+        android:adjustViewBounds="true"
+        android:background="#00FFFFFF"
+        android:contentDescription="@string/back"
+        android:onClick="goBackToHome"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_arrow_back_black_24dp" />
+
+    <ImageButton
+        android:id="@+id/delete_button"
+        android:layout_width="35dip"
+        android:layout_height="35dip"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="10dp"
+        android:background="#00FFFFFF"
+        android:contentDescription="@string/back"
+        android:onClick="deleteMyList"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/ic_delete_forever_black_24dp" />
+
+    <Spinner
+        android:id="@+id/activityListSpinner"
+        android:layout_width="130dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="95dp"
+        android:layout_marginEnd="130dp"
+        android:layout_marginBottom="3dp"
+        android:entries="@array/ItemtypeArray"
+        app:layout_constraintBottom_toTopOf="@+id/listPageListView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/clearAll" />
+
+    <Button
+        android:id="@+id/rename_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="5dp"
+        android:background="#00FFFFFF"
+        android:onClick="renameTable"
+        android:text="@string/rename"
+        android:textColor="#00AAAD"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
